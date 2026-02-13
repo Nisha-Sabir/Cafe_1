@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Brew - Authentic Nigerian Cafe</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#home" class="logo">Lumina Brew</a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content reveal" data-speed="0.5">
+            <h1>Experience Authentic <br> Nigerian Flavors</h1>
+            <p>Premium Coffee • Authentic Cuisine • Warm Vibes</p>
+            <a href="#menu" class="btn-primary">View Full Menu</a>
+        </div>
+        <div class="parallax-bg"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Lumina Brew isn't just a cafe; it's a culinary journey. Born from a passion for bridging
+                        traditional Nigerian heritage with modern coffee culture, we've created a sanctuary in Lagos
+                        primarily designed for community and comfort.</p>
+                    <p>We source the finest local ingredients for our Jollof and Suya, while our coffee beans are
+                        carefully selected to provide that perfect morning brew. Step in, relax, and let us serve you a
+                        taste of home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section menu reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2>Curated Menu</h2>
+                <p>Exquisite dishes prepared with passion.</p>
+                <div class="underline"></div>
+            </div>
+
+            <!-- Menu Tabs -->
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-target="breakfast">Breakfast</button>
+                <button class="tab-btn" data-target="lunch">Lunch</button>
+                <button class="tab-btn" data-target="drinks">Drinks</button>
+                <button class="tab-btn" data-target="desserts">Desserts (Snacks)</button>
+            </div>
+
+            <!-- Breakfast Menu -->
+            <div class="menu-category active" id="breakfast">
+                <div class="menu-grid">
+                    <div class="menu-card reveal reveal-delay-1">
+                        <div class="card-image">
+                            <img src="https://tse2.mm.bing.net/th?q=Nigerian+Akara+Balls+Food&w=800" alt="Akara">
+                        </div>
+                        <div class="card-info">
+                            <h3>Akara Combo</h3>
+                            <p>Golden fried bean cakes served with warm Pap (Ogi).</p>
+                            <span class="price">₦1,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-card reveal reveal-delay-2">
+                        <div class="card-image">
+                            <img src="https://tse1.mm.bing.net/th?q=Nigerian+Moi+Moi+Plated&w=800" alt="Moi Moi">
+                        </div>
+                        <div class="card-info">
+                            <h3>Moi Moi Special</h3>
+                            <p>Steamed bean pudding garnished with egg and fish.</p>
+                            <span class="price">₦900</span>
+                        </div>
+                    </div>
+                    <div class="menu-card reveal reveal-delay-3">
+                        <div class="card-image">
+                            <img src="https://tse1.mm.bing.net/th?q=Boiled+Yam+and+Egg+Sauce+Nigeria&w=800"
+                                alt="Yam and Egg">
+                        </div>
+                        <div class="card-info">
+                            <h3>Boiled Yam & Egg Sauce</h3>
+                            <p>Soft yam served with rich egg and tomato stir-fry.</p>
+                            <span class="price">₦1,200</span>
+                        </div>
+                    </div>
+                    <div class="menu-card reveal reveal-delay-1">
+                        <div class="card-image">
+                            <img src="https://tse2.mm.bing.net/th?q=Nigerian+Tea+and+Agege+Bread&w=800"
+                                alt="Tea and Bread">
+                        </div>
+                        <div class="card-info">
+                            <h3>Tea & Bread</h3>
+                            <p>Classic Nigerian breakfast. Hot tea with sliced agege bread.</p>
+                            <span class="price">₦800</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lunch Menu -->
+            <div class="menu-category" id="lunch">
+                <div class="menu-grid">
+                    <div class="menu-card reveal reveal-delay-1">
+                        <div class="card-image">
+                            <img src="https://tse3.mm.bing.net/th?q=Nigerian+Party+Jollof+Rice+Chicken&w=800"
+                                alt="Jollof Rice">
+                        </div>
+                        <div class="card-info">
+                            <h3>Smoky Jollof Rice</h3>
+                            <p>The national favorite. Smoky rice with seasoning and chicken.</p>
+                            <span class="price">₦2,500</span>
+                        </div>
+                    </div>
+                    <div class="menu-card reveal reveal-delay-2">
+                        <div class="card-image">
+                            <img src="https://tse4.mm.bing.net/th?q=Nigerian+Fried+Rice+with+Chicken&w=800"
+                                alt="Fried Rice">
+                        </div>
+                        <div class="card-info">
+                            <h3>Fried Rice Special</h3>
+                            <p>Aromatic rice stir-fried with veggies, liver, and shrimp.</p>
+                            <span class="price">₦2,800</span>
+                        </div>
+                    </div>
+                    <div class="menu-card reveal reveal-delay-3">
+                        <div class="card-image">
+                            <img src="https://tse2.mm.bing.net/th?q=Pounded+Yam+and+Egusi+Soup+Nigeria&w=800"
+                                alt="Pounded Yam">
+                        </div>
+                        <div class="card-info">
+                            <h3>Pounded Yam & Egusi</h3>
+                            <p>Swallow with rich melon seed soup and assorted meat.</p>
+                            <span class="price">₦3,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-card reveal reveal-delay-1">
+                        <div class="card-image">
+                            <img src="https://tse3.mm.bing.net/th?q=Efo+Riro+Soup+Nigeria&w=800" alt="Efo Riro">
+                        </div>
+                        <div class="card-info">
+                            <h3>Efo Riro & Semo</h3>
+                            <p>Rich spinach stew served with soft semovita.</p>
+                            <span class="price">₦3,200</span>
+                        </div>
+                    </div>
+                    <div class="menu-card reveal reveal-delay-2">
+                        <div class="card-image">
+                            <img src="https://tse4.mm.bing.net/th?q=Nigerian+Suya+Kebab+Plate&w=800" alt="Beef Suya">
+                        </div>
+                        <div class="card-info">
+                            <h3>Beef Suya Plate</h3>
+                            <p>Spicy grilled beef skewers with fresh onions and cabbage.</p>
+                            <span class="price">₦1,500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks Menu -->
+            <div class="menu-category" id="drinks">
+                <div class="menu-grid">
+                    <div class="menu-card reveal reveal-delay-1">
+                        <div class="card-image">
+                            <img src="https://tse1.mm.bing.net/th?q=Nigerian+Zobo+Drink+Glass&w=800" alt="Zobo Drink">
+                        </div>
+                        <div class="card-info">
+                            <h3>Chilled Zobo</h3>
+                            <p>Healthy hibiscus drink infused with ginger and pineapple.</p>
+                            <span class="price">₦500</span>
+                        </div>
+                    </div>
+                    <div class="menu-card reveal reveal-delay-2">
+                        <div class="card-image">
+                            <img src="https://tse2.mm.bing.net/th?q=Nigerian+Chapman+Drink+Glass&w=800" alt="Chapman">
+                        </div>
+                        <div class="card-info">
+                            <h3>Chapman Cocktail</h3>
+                            <p>Fruity, refreshing Nigerian cocktail with cucumber slices.</p>
+                            <span class="price">₦1,200</span>
+                        </div>
+                    </div>
+                    <div class="menu-card reveal reveal-delay-3">
+                        <div class="card-image">
+                            <img src="https://tse4.mm.bing.net/th?q=Nigerian+Palm+Wine+Calabash&w=800" alt="Palm Wine">
+                        </div>
+                        <div class="card-info">
+                            <h3>Fresh Palm Wine</h3>
+                            <p>Served chilled in a traditional way.</p>
+                            <span class="price">₦1,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts Menu -->
+            <div class="menu-category" id="desserts">
+                <div class="menu-grid">
+                    <div class="menu-card reveal reveal-delay-1">
+                        <div class="card-image">
+                            <img src="https://tse3.mm.bing.net/th?q=Nigerian+Meat+Pie+Snack&w=800" alt="Meat Pie">
+                        </div>
+                        <div class="card-info">
+                            <h3>Nigerian Meat Pie</h3>
+                            <p>Savory pastry filled with minced meat and potatoes.</p>
+                            <span class="price">₦700</span>
+                        </div>
+                    </div>
+                    <div class="menu-card reveal reveal-delay-2">
+                        <div class="card-image">
+                            <img src="https://tse3.mm.bing.net/th?q=Nigerian+Puff+Puff+Dish&w=800" alt="Puff Puff">
+                        </div>
+                        <div class="card-info">
+                            <h3>Puff Puff</h3>
+                            <p>Soft, fluffy fried dough balls dusted with sugar.</p>
+                            <span class="price">₦500</span>
+                        </div>
+                    </div>
+                    <div class="menu-card reveal reveal-delay-3">
+                        <div class="card-image">
+                            <img src="https://tse4.mm.bing.net/th?q=Nigerian+Chin+Chin+Snack&w=800" alt="Chin Chin">
+                        </div>
+                        <div class="card-info">
+                            <h3>Chin Chin Jar</h3>
+                            <p>Crunchy fried snack bits. Perfect for sharing.</p>
+                            <span class="price">₦1,500</span>
+                        </div>
+                    </div>
+                    <div class="menu-card reveal reveal-delay-1">
+                        <div class="card-image">
+                            <img src="https://tse1.mm.bing.net/th?q=Pound+Cake+Slice+Coffee&w=800" alt="Cake">
+                        </div>
+                        <div class="card-info">
+                            <h3>Butter Cake Slice</h3>
+                            <p>Rich and moist cake slice to go with your coffee.</p>
+                            <span class="price">₦1,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2>Customer Love</h2>
+                <p>What our community is saying about us.</p>
+                <div class="underline"></div>
+            </div>
+            <div class="testimonial-grid">
+                <!-- Review 1 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">"The best Jollof Rice I've had in a cafe setting! The vibe is so chill,
+                        perfect for working or just hanging out. Totally love it."</p>
+                    <div class="customer-info">
+                        <img src="https://i.pravatar.cc/150?u=a042581f4e29026024d" alt="Customer" class="customer-img">
+                        <div class="customer-details">
+                            <h4>Amina Bello</h4>
+                            <span>Foodie & Blogger</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">"Their coffee is surprisingly good! And pairing it with Puff Puff?
+                        Absolute heaven. The service is always top-notch."</p>
+                    <div class="customer-info">
+                        <img src="https://i.pravatar.cc/150?u=a042581f4e29026704d" alt="Customer" class="customer-img">
+                        <div class="customer-details">
+                            <h4>David Okon</h4>
+                            <span>Graphic Designer</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">"A hidden gem in Victoria Island. The ambiance is so warm and welcoming.
+                        My go-to spot for Sunday brunch with family."</p>
+                    <div class="customer-info">
+                        <img src="https://i.pravatar.cc/150?u=a042581f4e29026704e" alt="Customer" class="customer-img">
+                        <div class="customer-details">
+                            <h4>Chidinma Eze</h4>
+                            <span>Regular Regular</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Us</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Lagos Avenue, Victoria Island, Lagos</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>hello@luminabrew.ng</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+234 800 123 4567</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Lumina Brew</h3>
+                <p>Authentic Nigerian flavors meet modern cafe vibes. Come for the coffee, stay for the culture.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Full Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li>Mon - Fri: 7am - 9pm</li>
+                    <li>Sat - Sun: 8am - 10pm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Lumina Brew. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
